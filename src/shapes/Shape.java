@@ -8,7 +8,7 @@ package shapes;
  *
  * @author suele
  */
-public class Shape {
+public abstract class Shape {
     
     private String colour ="Yellow";
    private  boolean isFilled = true;

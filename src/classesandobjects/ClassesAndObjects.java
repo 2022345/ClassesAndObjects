@@ -55,7 +55,7 @@ public class ClassesAndObjects {
         Rectangle rect1 = new Rectangle ();
         System.out.println(  rect1.getArea());
         
-        System.out.println(rect1.getColour);
+        System.out.println(rect1.getColour());
         System.out.println(tri5.getColour());
       
         
