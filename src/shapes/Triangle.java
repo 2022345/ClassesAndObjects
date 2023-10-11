@@ -8,7 +8,7 @@ package shapes;
  *
  * @author suele
  */
-public class Triangle extends Shape {
+public class Triangle extends Shape implements ShapeD2{
     private int side1;
     private int side2;
     private int side3;
@@ -40,5 +40,35 @@ public class Triangle extends Shape {
     public void setSide3(int side3) {
         this.side3 = side3;
     }
+    
+    @Override
+    
+    public double getArea(){
+        return 0.5 * side1 * side2;
+        
+    }
+    
+    @Override
+    public void setColour(String colour){
+        if (colour.equals ("Blue")){
+            this.colour = "Red";
+    } else {
+    this.colour = colour;
+        
+    }
+    }   
+   
+    
+    @Override 
+    public String toString (){
+        return "hello I am a triangle with the colour of:" + colour;
+    
+    
+}
+        @Override
+        public double calculateAngles (){
+        return 60;
+    }
+    
     
 }
