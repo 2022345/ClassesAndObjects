@@ -18,4 +18,27 @@ public class Person {
     boolean isProgrammer = true;
     Triangle favTriangle;
     
+    public Person () {
+        age = 20;
+        name = "Michael";
+        System.out.println("Constractor 1");
+        
+    }
+    
+    public Person(int age){
+    this.age = age;
+        System.out.println("Constructor 2");
+       
+    }
+    
+    public Person (int age, String name) {
+        this.age = age;
+        this.name = name;
+        System.out.println("Constructor 3");
+    }
+    
+    public Person (String name, int age){
+        System.out.println("Constructor 4");
+    }
+    
 }
