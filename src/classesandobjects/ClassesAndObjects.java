@@ -4,7 +4,11 @@
  */
 package classesandobjects;
 
+import shapes.Circle;
 import shapes.Rectangle;
+import shapes.Shape;
+import shapes.ShapeD2;
+import shapes.Square;
 import shapes.Triangle;
 
 /**
@@ -20,6 +24,7 @@ public class ClassesAndObjects {
         // TODO code application logic here
         
       Triangle tri1 = new Triangle ();
+        System.out.println(tri1);
       Triangle tri2 = new Triangle ();
       Triangle tri3 = new Triangle ();
       Triangle tri4 = new Triangle ();
@@ -51,8 +56,9 @@ public class ClassesAndObjects {
       Person sam = new Person();
       sam.favTriangle = tri5;
       
-              
+              System.out.println("---Rectangles---");
         Rectangle rect1 = new Rectangle ();
+        Rectangle rect2 = new Rectangle (true, "Blue", 5, 6);
         System.out.println(  rect1.getArea());
         
         System.out.println(rect1.getColour());
@@ -61,7 +67,22 @@ public class ClassesAndObjects {
         
      //   Shape shap1 =new Shape();
         
+        Person p4 = new Person ("Sam", 100);
+        Person p3 = new Person (42, "Ken");
+        Person p1 = new Person();
+        Person p2 = new Person(5);
         
+        
+        Square sq1 = new Square(true, "Green", 10);
+        Rectangle sq2 = new Square(false, "Purple", 5);
+        Shape sq3 = new Square (true, "Maroon",7);
+        Shape tri10 = new Triangle();
+        sq1.getArea();
+        
+        ShapeD2 sq4 = new Square (true, "Blue", 2);
+        sq4.calculateAngles();
+        
+       // ShapeD2 circle5 = new Circle();
     }
     
 }
