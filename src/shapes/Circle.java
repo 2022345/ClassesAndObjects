@@ -9,16 +9,15 @@ package shapes;
  * @author suele
  */
 public class Circle extends Shape {
-    private int radius;
+    private double radius;
     
    
 
-    public int getRadius() {
-        return radius;
-    }
-
+   
+    
+    @Override
   public double getArea(){
-      return (3.141579 * this.radius * this.radius);
+      return (3.14 * radius * radius);
   }
     
     
